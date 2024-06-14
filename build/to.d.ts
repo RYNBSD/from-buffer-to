@@ -12,7 +12,7 @@ export declare function buffer2readable(buffer: Buffer): Readable;
 /** Node Writable stream */
 export declare function buffer2writable(buffer: Buffer): Writable;
 /** Web Readable stream */
-export declare function buffer2readablestream(buffer: Buffer): ReadableStream<string>;
+export declare function buffer2readablestream(buffer: Buffer): ReadableStream<number>;
 /** Web Readable stream */
 export declare function buffer2writablestream(buffer: Buffer): import("stream/web").WritableStream<any>;
 //# sourceMappingURL=to.d.ts.map

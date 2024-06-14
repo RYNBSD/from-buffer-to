@@ -18,13 +18,13 @@ export function buffer2uint8(buffer: Buffer) {
 
 export function buffer2array(buffer: Buffer) {
   if (!Buffer.isBuffer(buffer)) throw new TypeError("Invalid Buffer");
-  return new Uint8Array(buffer).buffer;
+  return buffer.buffer;
 }
 
 /** Node Readable stream */
 export function buffer2readable(buffer: Buffer) {
   if (!Buffer.isBuffer(buffer)) throw new TypeError("Invalid Buffer");
-  return Readable.from(buffer.toString());
+  return Readable.from(buffer);
 }
 
 /** Node Writable stream */
@@ -41,7 +41,7 @@ export function buffer2writable(buffer: Buffer) {
 /** Web Readable stream */
 export function buffer2readablestream(buffer: Buffer) {
   if (!Buffer.isBuffer(buffer)) throw new TypeError("Invalid Buffer");
-  return ReadableStream.from(buffer.toString());
+  return ReadableStream.from(buffer);
 }
 
 /** Web Readable stream */
