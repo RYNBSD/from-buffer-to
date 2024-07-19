@@ -1,6 +1,6 @@
 {
   "name": "@ryn-bsd/from-buffer-to",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This package helps to convert any type to buffer and buffer to any type, with 0 dependencies. <br />\r Why the package name is <mark>from-buffer-to</mark> ?<br />\r **from buffer to any**<br />\r **buffer to any**",
   "main": "index.js",
   "type": "module",
